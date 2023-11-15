@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../CSS/styles.css"> -->
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 73%, rgba(2,0,160,1) 89%,
+                rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    }
+    .topnav{
+        overflow: hidden;
+        padding: 15px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 20px;
+        position: static;
+    }
+    .topnav li{
+        list-style-type: none;
+        display: inline;
+        color: white;
+        margin-left: 50px;
+        font-size: 25px;
+     }
+     .topnav li a{
+        text-decoration: none;
+        color: greenyellow;
+     }
+     .topnav li a:hover{
+       color: red;
+     }
+     button{
+        width: 200px;
+        border: 2px solid green;
+        background-color: transparent;
+      font-weight: 500;
+        padding: 10px;
+        margin-top: 15px;
+     }
+     button a{
+        color: black;
+    
+     }
+     button:hover{
+        background-color: greenyellow;
+     }
+    
+    
+     .profile{
+        width: 100%;
+        height: auto;
+      background: url("../images/white.jpg") no-repeat fixed;
+       display: flex;
+       color: black;
+       padding: 10px;
+       border-radius: 30px;
+       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      
+    }
+    .profile h1{
+        font-size: 50px;
+    }
+    .profile:hover h1{
+        color: red;
+    }
+    .profile img{
+        
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(144, 46, 46, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       
+    }
+    .profile img:hover{
+        border: 3px solid black;
+    }
+    
+    .projects{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: yellow;
+        padding: 10px;
+        border-radius: 30px;
+        justify-content: space-between;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .projects a{
+        text-decoration: none;
+    }
+    .box{
+        width: 48%;
+        padding: 30px;
+        font-size: 30px;
+        text-align: center;
+        color: blueviolet;
+        background-color: black;
+        margin: 10px;
+        border-radius: 30px;
+    
+    }
+    .box:hover{
+        background-color: coral;
+    }
+    
+    .skills{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .skilbok{
+      width: 300px;
+      height: auto;
+      text-align: center;
+      background-color: greenyellow;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 20px;
+    
+    }
+    .skilbok h5:hover{
+       background-color: wheat;border-radius: 3px;
+    }
+    .skilbok h4{
+       background-color: white;border-radius: 3px;
+    }
+    
+    .certify{
+    
+        width: 100%;
+        height: auto;
+        background-color: coral;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .certify a{
+        background-color: greenyellow;
+        text-decoration: none;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .connect{
+        width: 100%;
+        height: 300px;
+        background-color: black;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        color: white;
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" id="home">
+      
+        <nav class="topnav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#certify">CERTIFICATIONS</a></li>
+            <li><a href="#connect">CONNECT</a></li>
+
+
+        </nav>
+        <div id="about">
+        <h1 class="text-center mt-4 text-warning">ABOUT</h1>
+        <div class="profile mt-5">
+        <img src="../images/mypic.jpg" alt="" style="width: 300px; height: 350px;" class="rounded-circle border-secondary" >
+         <div class=" ml-5 mt-3">
+            <h1 class="font-weight-bold "> HII ,I'M RAJA KIRAN</h1>
+          <h4 style="color: black;">I have Experienced Front-End Technologies and Back-End Technologies and developed Intermmediate Apllications based on that Technologies.<br>
+        </h4>
+        <h6>Enthusiastic and adaptable IT graduate seeking a dynamic entry-level position in the IT industry. Eager to apply academic knowledge and hands-on skills in a professional setting, with a keen interest in contributing to innovative projects and staying abreast of emerging technologies.</h6>
+
+        <button><a href="Final_resume2 (2).pdf" style="text-decoration: none;">View Resume</a></button>
+         </div>
+        </div>
+    </div>
+
+    <div id="project">
+        <h1 class="text-center mt-4 text-warning">PROJECTS</h1>
+        <div class="projects" >
+           <h1 style="width: 100%;" class="text-center text-success ">FRONT-END PROJECTS</h1>
+          <div class="box font-weight-bold">TO-DO LIST</div>
+          <div class="box font-weight-bold">CALCULATOR</div>
+          <div class="box font-weight-bold">COLOR FILPPER</div>
+          <div class="box font-weight-bold">LOGIN PAGE(validations)</div>
+          <div class="box font-weight-bold">EMPLOYEE DATA EDIT</div>
+          <div class="box font-weight-bold">PORTFOLIO</div>
+          <div class="box font-weight-bold">AGE CALCULATOR</div>
+          <h1 style="width: 100%;" class="text-center text-success">BACK-END PROJECTS</h1>
+          <div class="box font-weight-bold">BOOKS STORE DATABASE</div>
+          <div class="box font-weight-bold">SERVLET PROGRAMMING</div>
+          <div class="box font-weight-bold">SEARCH BOOKS FROM DATABASE</div>
+          <div class="box font-weight-bold">EMPLOYEE CRUD OPERATION</div>
+        </div>
+    </div>
+    <div id="skills">
+        <h1 class="text-center mt-4 text-warning">SKILLS</h1>
+        <div class="skills">
+            <div class="skilbok font-weight-bold "><h4 class="text-dark">FRONT END SKILLS</h4>
+                <h5 >HTML</h5>
+                <h5>CSS</h5>
+                <h5>JavaScript</h5>
+             </div>
+             <div class="skilbok font-weight-bold "><h4 class="text-dark">BACK END SKILLS</h4>
+                <h5>C LANGUAGE</h5>
+                <h5>DSA</h5>
+                <h5>CORE JAVA</h5>
+                <h5>ADVANCE JAVA</h5>
+                <h5>JDBC</h5>
+                <h5>SERVLETS</h5>
+             </div>
+             <div class="skilbok font-weight-bold "><h4 class="text-dark">DATA BASE</h4>
+                <h5>SQL ,MYSQL</h5>
+             </div>
+             <div class="skilbok font-weight-bold "><h4 class="text-dark">TOOLS</h4>
+                <h5>VS CODE</h5>
+                <h5>ECLIPSE</h5>
+                <h5>MY SQL WORKBENCH</h5>
+             </div>
+
+        </div>
+       
+    </div>
+    
+
+   <div id="certify">
+    <h1 class="text-center mt-4 text-warning">CERTIFICATIONS</h1>
+    <div class="certify">
+       <h3>CERTIFICATION NAME : <span class="text-success">Introduction To Programming In C FROM NPTEL</span></h3>
+        <h3>ISSUED ON: FEB-APR 2022</h3>
+        <a href="../images/Introduction To Programming In C .jpg">Click to see</a>
+        <hr>
+        <h3>CERTIFICATION NAME : <span class="text-success">JAVA FROM GREAT LEARNING</span></h3>
+        <h3>ISSUED ON: AUGUST 2022</h3>
+        <a href="../images/certificate.png">Click to see</a>
+        <hr>
+        <h3>CERTIFICATION NAME : <span class="text-success">JAVA(BASIC) FROM HACKERRANK</span></h3>
+        <h3>ISSUED ON:14  AUGUST 2023</h3>
+        <a href="https://www.hackerrank.com/certificates/7f44081bd722">Click to see</a>
+        <hr>
+        <h3>CERTIFICATION NAME : <span class="text-success">SQL  FROM HACKERRANK</span></h3>
+        <h3>ISSUED ON:15  AUGUST 2023</h3>
+        <a href="https://www.hackerrank.com/certificates/b2496165c186">Click to see</a>
+    </div>
+   
+   </div>    
+    
+<div id="connect">
+    <h1 class="text-center mt-4 text-warning">CONNECT</h1>
+    <div class="connect">
+       
+       <address>
+        <h5>rajakiranyadavalli@gmail.com</h5>
+       <h5>9494763324</h5>
+      MAIL : <a href="mailto:rajakiranyadavalli@gmail.com">click to mail</a><br> 
+      CONTACT: 9494763324<br>
+     </address>
+     <a href="https://github.com/RajaLucy"><img src="../images/git.png" alt="" style="width: 50px;"></a>
+     <a href="https://www.hackerrank.com/profile/rajakiranyadava1"><img src="../images/hacker.png" alt="" style="width: 50px;"></a>
+     <a href="https://www.linkedin.com/in/rajakiran-yadavalli-0a8788230/"><img src="../images/linked.png" alt="" style="width: 50px;"></a>
+    </div>
+
+</div>
+ </div>
+   
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
